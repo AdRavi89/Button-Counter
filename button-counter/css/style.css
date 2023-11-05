@@ -1,0 +1,87 @@
+/* Mengatur latar belakang dan jenis font untuk seluruh elemen dalam body */
+body {
+    background-color: #6d72fe;
+    font-family: 'Pixelify Sans', sans-serif;
+}
+
+/* Mengatur tata letak teks di dalam elemen section menjadi pusat */
+section {
+    text-align: center;
+}
+
+/* Mengatur lebar elemen dengan id 'myRow' menjadi 100% */
+#myRow {
+    width: 100%;
+}
+
+/* Mengatur tinggi elemen dengan id 'myCol' menjadi 100% viewport height (vh) */
+#myCol {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Mengatur tampilan kotak dengan class 'box' */
+.box {
+    background-color: #8a8eff;
+    width: 450px;
+    height: 200px;
+    border-radius: 110px 110px 110px 110px;
+}
+
+/* Mengatur tampilan elemen dengan id 'colTasto' */
+#colTasto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 200px;
+}
+
+/* Mengatur tampilan elemen dengan id 'colCerchio' */
+#colCerchio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Mengatur tampilan tombol */
+button {
+    font-size: larger;
+    color: #A0A3FF;
+    background: transparent;
+    border-color: transparent;
+    font-size: 80px;
+}
+
+/* Mengatur tampilan tombol saat dihover */
+button:hover {
+    color: white;
+}
+
+/* Mengatur tampilan elemen dengan id 'counter' */
+#counter {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 80px;
+    color: #6d72fe;
+}
+
+/* Media query untuk perangkat dengan lebar layar maksimal 790px */
+@media only screen and (max-width: 790px) {
+    .row>* {
+        width: auto !important;
+    }
+
+    /* Mengatur tata letak elemen dengan id 'myRowDue' menjadi pusat */
+    #myRowDue {
+        justify-content: center;
+    }
+}
